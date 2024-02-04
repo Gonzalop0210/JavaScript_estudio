@@ -1,17 +1,15 @@
-let firtsNumber = 0;
-let secondNumber = 0;
-
+let arraynumero = [];
+let numero = 0;
 do {
-    firtsNumber = prompt('Escribe el primer número');
-} while (isNaN(parseFloat(firtsNumber)) || firtsNumber < 0);
+    numero = parseFloat(prompt('Escribe el numero'));
+    if (!isNaN(numero) && numero >= 0) {
+        arraynumero.push(numero)
+    }
+} while (!isNaN(numero) && numero >= 0);
 
-do {
-    secondNumber = prompt('Escribe el segundo número');
-} while (isNaN(parseFloat(secondNumber)) || secondNumber < 0);
+console.log(arraynumero);
 
-let mensaje = (firtsNumber > secondNumber) ? `El número ${firtsNumber} es mayor y el número ${secondNumber} es menor` : `El número ${secondNumber} es mayor y el número ${firtsNumber} es menor`;
-if (firtsNumber === secondNumber) {
-    mensaje = 'Los números son iguales';
-}
-
-console.log(mensaje);
+let sumaArray = arraynumero.reduce((a, va) => a + va, 0);
+let media = sumaArray / arraynumero.length
+console.log(sumaArray);
+console.log(media);
