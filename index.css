@@ -1,4 +1,48 @@
 body {
     background-color: #333;
     color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    height: 90vh;
+}
+.form {
+    border: 1px solid rgba(118, 118, 118, 0.777);
+    background-color: #00000092;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:550px;
+    padding-top: 50px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+input {
+    width: 85%;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.input__boton {
+    background-color: rgba(0, 42, 255, 0.868);
+    color: aliceblue;
+    border: 1px solid rgba(0, 42, 255, 0.868);
+    width: 40%;
+    border-radius: 30px;
+    margin-top: 20px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+hr {
+    width: 85%;
 }
